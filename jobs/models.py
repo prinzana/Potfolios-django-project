@@ -10,5 +10,3 @@ class Job(models.Model):
 
 
 
-
-

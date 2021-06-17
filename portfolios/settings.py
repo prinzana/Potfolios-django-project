@@ -36,6 +36,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'jobs.apps.JobsConfig', 
+    'blogg.apps.BloggConfig',
+    #'blog.apps.BlogConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -59,7 +61,7 @@ ROOT_URLCONF = 'portfolios.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['template'],#the inclusion of template on the parenthesis dint affect the outvome of the result, page was still loading
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
