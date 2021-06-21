@@ -36,8 +36,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'jobs.apps.JobsConfig', 
-    'blogg.apps.BloggConfig',
-    #'blog.apps.BlogConfig',
+    #'blogg.apps.BloggConfig',
+    'blog.apps.BlogConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
