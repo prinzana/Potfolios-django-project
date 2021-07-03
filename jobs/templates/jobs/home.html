@@ -1,6 +1,6 @@
 
+{% load static %}
 <!doctype html>
-
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -24,15 +24,15 @@
 
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Prince Zana</a>
+        <a class="navbar-brand" href="{% url 'home' %}">Prince Zana</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link" href="#">Twitter</a>
-            <a class="nav-item nav-link" href="#">Resume</a>
-            <a class="nav-item nav-link" href="#">Blog</a>
+            <a class="nav-item nav-link" href="http://twitter.com/Prinzana">Twitter</a>
+          <a class="nav-item nav-link" href="{% static 'Prince.pdf' %}">Resume</a>
+            <a class="nav-item nav-link" href="{% url 'allblogs' %}">Blog</a>
           </div>
         </div>
       </nav>
@@ -45,6 +45,8 @@
             <a href="mailto:prinzana@gmail.com" class="btn btn-primary my-2">Email Me!</a>
             
           </p>
+          <img src=" {% static 'prince.jpg' %}" width="300" height="300" alt="">
+
         </div>
       </section>
 
